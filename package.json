@@ -1,0 +1,54 @@
+{
+  "name": "tm21-monitoring-daq-api",
+  "version": "1.0.0",
+  "description": "NI DAQ Data parser and socketIO API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eunchurn/tm21-monitoring-daq-api.git"
+  },
+  "author": "Eunchurn Park",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eunchurn/tm21-monitoring-daq-api/issues"
+  },
+  "homepage": "https://github.com/eunchurn/tm21-monitoring-daq-api#readme",
+  "proxy": "http://localhost:5000/",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      [
+        "module-resolver",
+        {
+          "root": [
+            "./"
+          ],
+          "alias": {
+            "@src": "./src",
+            "@libs": "./libs",
+            "@build": "./build/Release"
+          }
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "binary-parser": "^1.4.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "redis": "^2.8.0",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "nodemon": "^1.19.2"
+  }
+}
