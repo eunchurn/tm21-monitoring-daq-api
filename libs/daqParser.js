@@ -9,9 +9,9 @@ const parser = new Parser()
   .array("channel", {
     type: new Parser().array("data", {
       type: "doublebe",
-      length: 20
+      length: 100
     }),
     length: "noCh"
   });
 
-export const dataParse = data => (parsedData = parser.parse(data));
+export const dataParse = data => parser.parse(data);
