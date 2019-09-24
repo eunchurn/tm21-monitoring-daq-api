@@ -1,4 +1,4 @@
-import { Parser } from "binary-parser");
+import { Parser } from "binary-parser";
 
 const daqParser = new Parser()
   .uint32be("header")
