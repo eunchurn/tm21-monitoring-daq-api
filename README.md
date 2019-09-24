@@ -12,9 +12,6 @@
 ## Environment
 
 ```env
-REDIS_SERVER_HOST=localhost
-REDIS_SERVER_PORT=6379
-REDIS_SERVER_PASSWORD=password
-REDIS_DATA_DIR=/data
-REDIS_LOCAL_DATA_DIR=/home/ext_hdd/data/redis
+DAQ_UDP_MULTI_HOST=234.5.6.7
+DAQ_UDP_PORT=58432
 ```

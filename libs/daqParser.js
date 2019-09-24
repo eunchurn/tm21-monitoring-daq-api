@@ -1,6 +1,4 @@
-const Parser = require("binary-parser").Parser;
-
-const parser = new Parser()
+const daqParser = new Parser()
   .uint32be("header")
   .int8("noCh")
   .int8("noSample")
@@ -14,4 +12,4 @@ const parser = new Parser()
     length: "noCh"
   });
 
-export const dataParse = data => parser.parse(data);
+  export const daqParse = data => daqParser.parse(data);
