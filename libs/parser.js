@@ -1,3 +1,5 @@
+import { Parser } from "binary-parser");
+
 const daqParser = new Parser()
   .uint32be("header")
   .int8("noCh")
