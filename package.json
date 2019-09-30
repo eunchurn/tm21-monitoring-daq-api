@@ -4,7 +4,8 @@
   "description": "NI DAQ Data parser and socketIO API",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node ./index.js"
+    "start": "nodemon --exec babel-node ./index.js",
+    "build": "babel src libs -s -d dist"
   },
   "repository": {
     "type": "git",
@@ -45,6 +46,7 @@
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.0",
     "@babel/node": "^7.6.1",
     "@babel/preset-env": "^7.6.0",
