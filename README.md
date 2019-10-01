@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/eunchurn/tm21-monitoring-daq-api.svg?branch=master)](https://travis-ci.org/eunchurn/tm21-monitoring-daq-api)
+[![Build Status](https://travis-ci.org/eunchurn/tm21-monitoring-daq-api.svg?branch=master)](https://travis-ci.org/eunchurn/tm21-monitoring-daq-api) [![Greenkeeper badge](https://badges.greenkeeper.io/eunchurn/tm21-monitoring-daq-api.svg)](https://greenkeeper.io/)
 
 # TM21 DAQ SocketIO server
 
